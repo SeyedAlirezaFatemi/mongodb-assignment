@@ -1,0 +1,4 @@
+pymongo
+mongoengine
+Faker
+mongomock=3.22.0
