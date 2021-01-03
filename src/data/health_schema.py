@@ -30,7 +30,7 @@ class Pharmacy(mongoengine.Document):
 
 
 class Company(mongoengine.Document):
-    name = mongoengine.StringField(max_length=64, required=True, primary_key=True)
+    name = mongoengine.StringField(max_length=64, required=True, unique=True)
     telephone = mongoengine.StringField(max_length=32)
 
 
