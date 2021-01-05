@@ -1,4 +1,5 @@
 # From https://schema.org/MedicalSpecialty
+# noinspection SpellCheckingInspection
 specialties = [
     "Anesthesia",
     "Cardiovascular",
@@ -43,6 +44,7 @@ specialties = [
     "Urologic",
 ]
 # From https://github.com/dariusk/corpora/tree/master/data/medicine
+# noinspection SpellCheckingInspection
 drug_names = [
     "Abacavir Sulfate",
     "Abatacept",
@@ -1046,6 +1048,7 @@ drug_names = [
     "Zymaxid",
 ]
 # From https://byjus.com/chemical-compound-formulas/ & https://www.periodni.com/solcalc-chemical_compounds.html
+# noinspection SpellCheckingInspection
 drug_formulas = [
     "CH3COOH",
     "HCl",
@@ -1431,4 +1434,45 @@ drug_formulas = [
     "ZnBr2",
     "ZnCl2",
     "ZnSO4",
+]
+product_names = [
+    "Sweater",
+    "Shirt",
+    "Jeans",
+    "Gloves",
+    "Cap",
+    "Suit",
+    "Hawaiian shirt",
+    "Singlet",
+    "Business shoes",
+    "Flip flops",
+    "Shorts",
+    "Cardigan",
+    "Jacket",
+    "Sport shoes",
+    "Bow tie",
+    "Sleeveless shirt",
+    "Vest",
+    "Long sleeve top",
+    "Polo shirt",
+    "Jumper",
+    "Trench coat",
+    "Bathrobe",
+    "Cargo pants",
+    "Swimsuit",
+    "Blazer",
+    "T-shirt",
+    "Belt",
+    "Waistcoat",
+    "Socks",
+    "Tie",
+    "Pullover",
+    "Umbrella",
+    "Scarf",
+    "Sunglasses",
+    "Glasses",
+    "Boots",
+    "Wallet",
+    "Handbag",
+    "Watch",
 ]
