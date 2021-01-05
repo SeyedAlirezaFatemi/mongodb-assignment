@@ -11,3 +11,7 @@ def generate_national_id(fake, prev_national_ids):
 
 def str_to_date(string):
     return datetime.datetime.strptime(string, "%Y-%m-%d").date()
+
+
+def drop_db(client, db_name):
+    client.drop_database(db_name)
