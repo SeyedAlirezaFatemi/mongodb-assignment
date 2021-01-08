@@ -475,7 +475,7 @@ print(correct)
 # Set your student number
 student_number = 90000000
 file_path = os.path.join(
-    os.environ.get("OUTPUT_LOCATION"), "{}.json".format(student_number)
+    os.getenv("OUTPUT_LOCATION", "."), "{}.json".format(student_number)
 )
 with open(file_path, "w") as file:
     corrects = []
