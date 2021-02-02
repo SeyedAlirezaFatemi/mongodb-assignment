@@ -110,45 +110,6 @@ list(
 # In[ ]:
 
 
-# http://www.petecorey.com/blog/2020/01/29/mongodb-object-array-lookup-aggregation/
-print(
-    client.assignment.prescription.aggregate(
-        [
-            {"$match": {"date": datetime.datetime(2020, 3, 23, 0, 0)}},
-            {
-                "$lookup": {
-                    "from": "drug",
-                    "localField": "items.drug_id",
-                    "foreignField": "_id",
-                    "as": "items.drug",
-                }
-            },
-            {"$unwind": "$items.drug"},
-            {
-                "$group": {
-                    "_id": "$_id",
-                    "root": {"$mergeObjects": "$$ROOT"},
-                    "items": {"$push": "$items"},
-                }
-            },
-            {"$replaceRoot": {"newRoot": {"$mergeObjects": ["$root", "$$ROOT"]}}},
-            {"$project": {"root": 0}},
-            #
-            {"$project": {"_id": 0, "items.drug.name": 1}},
-        ]
-    ).next()
-)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 client.assignment.patient.aggregate(
     [
         {
@@ -172,12 +133,6 @@ client.assignment.patient.aggregate(
 
 
 # ## Query Assignments
-
-# In[ ]:
-
-
-
-
 
 # In[ ]:
 
@@ -297,7 +252,7 @@ a6 = list(
 # In[ ]:
 
 
-# نام تمام داروهایی که در تاریخ datetime.datetime(2020, 12, 21, 0, 0) تجویز شده اند
+# نام تمام داروهایی که در تاریخ datetime.datetime(2020, 9, 23, 0, 0) تجویز شده اند
 print("##7##")
 a7 = list(
     client.assignment.prescription.aggregate(
