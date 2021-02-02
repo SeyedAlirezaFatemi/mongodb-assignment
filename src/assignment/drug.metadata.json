@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"unique":true,"key":{"name":{"$numberInt":"1"},"company_id":{"$numberInt":"1"}},"name":"name_1_company_id_1","background":false,"sparse":false}],"uuid":"a15594dc21bf489ebfab16bda98c4e1a","collectionName":"drug"}
