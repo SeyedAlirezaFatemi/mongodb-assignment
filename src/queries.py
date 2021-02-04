@@ -141,7 +141,7 @@ client.assignment.patient.aggregate(
 print("##1##")
 a1 = list(
     client.assignment.pharmacy.find(
-        filter={},  # Complete the filter
+        filter={'telephone':{'$regex':'\+1*'}},  # Complete the filter
         projection={"name": 1, "_id": 0},
     )
 )
