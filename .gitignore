@@ -1,4 +1,6 @@
 
+*.swp
+
 # Created by https://www.toptal.com/developers/gitignore/api/jupyternotebooks,python,jetbrains+all,jetbrains+iml,jetbrains,pycharm,pycharm+all,pycharm+iml,vscode,virtualenv
 # Edit at https://www.toptal.com/developers/gitignore?templates=jupyternotebooks,python,jetbrains+all,jetbrains+iml,jetbrains,pycharm,pycharm+all,pycharm+iml,vscode,virtualenv
 
